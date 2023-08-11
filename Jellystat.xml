@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Jellystat</Name>
+  <Repository>cyfershepard/jellystat:latest</Repository>
+  <Registry>https://hub.docker.com/r/cyfershepard/jellystat</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/CyferShepard/Jellystat/discussions</Support>
+  <Project>https://github.com/CyferShepard/Jellystat</Project>
+  <Overview>Jellystat is a free and open source Statistics App for Jellyfin! &#xD;
+(This project is still in development - expect some weirdness)</Overview>
+  <Category>Tools: MediaServer:Other Status:Beta</Category>
+  <WebUI>http://[IP]:[PORT:3000]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/CyferShepard/Jellystat/main/src/pages/images/icon-b-512.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1691732982</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires>Requires an postgresql instance setup with the default root user, password can be changed.&#xD;
+Tested with postgresql14</Requires>
+  <Config Name="Backup path" Target="/app/backend/backup-data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="POSTGRES_USER" Target="POSTGRES_USER" Default="postgres" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="POSTGRES_PASSWORD" Target="POSTGRES_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="POSTGRES_IP" Target="POSTGRES_IP" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="POSTGRES_PORT" Target="POSTGRES_PORT" Default="5432" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="JWT_SECRET" Target="JWT_SECRET" Default="my-secret-jwt-key" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Server" Target="3000" Default="3000" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false"/>
+</Container>
