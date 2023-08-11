@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>Jellystat</Name>
-  <Repository>cyfershepard/jellystat:latest</Repository>
+  <Repository>cyfershepard/jellystat</Repository>
   <Registry>https://hub.docker.com/r/cyfershepard/jellystat</Registry>
   <Network>bridge</Network>
   <MyIP/>
@@ -21,7 +21,7 @@
   <DateInstalled>1691732982</DateInstalled>
   <DonateText/>
   <DonateLink/>
-  <Requires>Requires an postgresql instance setup with the default root user, password can be changed.&#xD;
+  <Requires>Postgresql default setup with the default root username, however password can be changed.&#xD;
 Tested with postgresql14</Requires>
   <Config Name="Backup path" Target="/app/backend/backup-data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false"/>
   <Config Name="POSTGRES_USER" Target="POSTGRES_USER" Default="postgres" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
