@@ -22,7 +22,7 @@
   <DonateText/>
   <DonateLink/>
   <Requires>Postgresql default setup with the default root username, however password can be changed.&#xD;
-Tested with postgresql14</Requires>
+Tested with postgresql14. Note the Postgresql container needs to be started before Jellystat can start.</Requires>
   <Config Name="Backup path" Target="/app/backend/backup-data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false"/>
   <Config Name="POSTGRES_USER" Target="POSTGRES_USER" Default="postgres" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="POSTGRES_PASSWORD" Target="POSTGRES_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
