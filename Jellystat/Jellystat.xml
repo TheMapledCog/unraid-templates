@@ -33,5 +33,5 @@ Note the Postgresql container needs to be started before Jellystat can start.</R
   <Config Name="Server" Target="3000" Default="3000" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
   <Config Name="JS_GEOLITE_ACCOUNT_ID" Target="JS_GEOLITE_ACCOUNT_ID" Default="" Mode="" Description="Optional, your GeoLite account ID to show geolocation info for client IPs" Type="Variable" Display="advanced-hide" Required="false" Mask="false"/>
   <Config Name="JS_GEOLITE_LICENSE_KEY" Target="JS_GEOLITE_LICENSE_KEY" Default="" Mode="" Description="Optional, your GeoLite account license key to show geolocation info for client IPs" Type="Variable" Display="advanced-hide" Required="false" Mask="true"/>
-  <Config Name="POSTGRES_DATABASE" Target="POSTGRES_DATABASE" Default="" Mode="" Description="This is an optional variable.&#13;&#10;If not set will use the default: 'jfstat'" Type="Variable" Display="advanced-hide" Required="false" Mask="false"/>
+  <Config Name="POSTGRES_DB" Target="POSTGRES_DB" Default="" Mode="" Description="This is an optional variable.&#13;&#10;Name of postgres database, if not set will use the default: 'jfstat'" Type="Variable" Display="advanced-hide" Required="false" Mask="false"/>
 </Container>
