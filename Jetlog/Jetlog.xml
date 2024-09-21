@@ -7,27 +7,28 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://hub.docker.com/r/pbogre/jetlog/</Support>
-  <Project/>
+  <Support>https://github.com/pbogre/jetlog/issues</Support>
+  <Project>https://github.com/pbogre/jetlog</Project>
   <Overview>Personal flight tracker and viewer&#xD;
 &#xD;
-Converted By Community Applications   Always verify this template (and values)  against the support page for the container&#xD;
+Share permissions can be finicky, check your PUID and PGID exist in Unraid (in terminal type 'cat /etc/passwd' to see all users) and that your chosen one has permission on the file share.&#xD;
 &#xD;
-https://hub.docker.com/r/pbogre/jetlog/</Overview>
-  <Category/>
-  <WebUI/>
-  <TemplateURL/>
-  <Icon/>
+https://hub.docker.com/r/pbogre/jetlog/&#xD;
+</Overview>
+  <Category>Tools: Other:</Category>
+  <WebUI>http://[IP]:[PORT:3000]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/Upmacc/unraid-templates/refs/heads/main/Jetlog/Jetlog.xml<TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/Upmacc/unraid-templates/refs/heads/main/Jetlog/Jetlog_favicon.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1726934553</DateInstalled>
+  <DateInstalled>1726935596</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
   <Config Name="JETLOG_PORT" Target="3000" Default="3000" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3073</Config>
-  <Config Name="PUID" Target="PUID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
-  <Config Name="PGID" Target="PGID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
-  <Config Name="APP_PATH" Target="APP_PATH" Default="/app" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">/mnt/user/appdata/jetlog</Config>
-  <Config Name="DATA_PATH" Target="/data" Default="/data" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/jetlog/data</Config>
+  <Config Name="PUID" Target="PUID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">1000</Config>
+  <Config Name="PGID" Target="PGID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+  <Config Name="APP_PATH" Target="APP_PATH" Default="/mnt/user/appdata/jetlog" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">/mnt/user/appdata/jetlog</Config>
+  <Config Name="DATA_PATH" Target="/data" Default="/mnt/user/appdata/jetlog/data" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/jetlog/data</Config>
 </Container>
