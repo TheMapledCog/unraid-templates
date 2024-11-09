@@ -17,7 +17,7 @@ https://hub.docker.com/r/pbogre/jetlog/&#xD;
 </Overview>
   <Category>Tools: Other:</Category>
   <WebUI>http://[IP]:[PORT:3000]/</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/Upmacc/unraid-templates/refs/heads/main/Jetlog/Jetlog.xml<TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/Upmacc/unraid-templates/refs/heads/main/Jetlog/Jetlog.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/Upmacc/unraid-templates/refs/heads/main/Jetlog/Jetlog_favicon.png</Icon>
   <ExtraParams/>
   <PostArgs/>
