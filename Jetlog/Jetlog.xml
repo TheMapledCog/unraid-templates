@@ -31,4 +31,5 @@ https://hub.docker.com/r/pbogre/jetlog/&#xD;
   <Config Name="PGID" Target="PGID" Default="1000" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">1000</Config>
   <Config Name="APP_PATH" Target="APP_PATH" Default="/mnt/user/appdata/jetlog" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">/mnt/user/appdata/jetlog</Config>
   <Config Name="DATA_PATH" Target="/data" Default="/mnt/user/appdata/jetlog/data" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/jetlog/data</Config>
+  <Config Name="SECRET_KEY" Target="SECRET_KEY" Default="" Mode="" Description="Enter a long random string of characters" Type="Variable" Display="always" Required="true" Mask="true"/>
 </Container>
