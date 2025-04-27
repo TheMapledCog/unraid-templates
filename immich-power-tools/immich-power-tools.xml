@@ -13,7 +13,7 @@
 Built to speed up your workflows in Immich to organize your people and albums.</Overview>
   <Category>Tools: MediaApp:Photos</Category>
   <WebUI>http://[IP]:[PORT:3000]</WebUI>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/TheMapledCog/unraid-templates/refs/heads/main/immich-power-tools/immich-power-tools.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/TheMapledCog/unraid-templates/refs/heads/main/immich-power-tools/favicon.png</Icon>
   <ExtraParams/>
   <PostArgs/>
