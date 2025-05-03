@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>orb-sensor</Name>
+  <Repository>orbforge/orb:latest</Repository>
+  <Registry>https://hub.docker.com/r/orbforge/orb</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/orbforge/orb-issues</Support>
+  <Project>https://orb.net/</Project>
+  <Overview>Orb is an intelligent app &amp;amp; platform designed to help you understand and improve your internet connectivity&#xD;
+&#xD;
+Real-time Monitoring: Orb continuously monitors your network connection to provide up-to-date insights.&#xD;
+Comprehensive Metrics: Track the responsiveness, reliability, and speed of your internet connection.&#xD;
+Multi-platform Support: Available on iOS, Android, macOS, and Windows.&#xD;
+Multiple Sensor Options: Monitor from your personal devices or set up dedicated Orb Sensors for 24/7 monitoring.&#xD;
+Historical Data: View trends and patterns in your network performance over time.&#xD;
+Actionable Insights: Receive suggestions to improve your connectivity based on detected issues.&#xD;
+&#xD;
+Further details available here: https://orb.net/docs/getting-started/what-is-orb</Overview>
+  <Category>Tools: Network:Management</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/TheMapledCog/unraid-templates/refs/heads/main/orb/favicon.png</Icon>
+  <ExtraParams>--memory="512m"</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1746275012</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires>network_mode: host: This is crucial for Orb to monitor network traffic directly from the host's network interfaces.&#xD;
+Port: 7443 and 8081 to be available on your Unraid host&#xD;
+Note: There is a memory limit set of 512m by default&#xD;
+&#xD;
+Once the Orb container is running, Open the Orb app on your phone or computer (which must be on the same network).&#xD;
+Your new Docker-based Orb sensor should be automatically detected and appear in the app, ready to be linked to your account. Follow the prompts in the app to link it.</Requires>
+  <Config Name="orb-data" Target="/root/.config/orb" Default="" Mode="rw" Description="Persists Orb configuration" Type="Path" Display="always" Required="true" Mask="false"/>
+</Container>
