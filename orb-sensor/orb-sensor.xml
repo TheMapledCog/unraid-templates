@@ -22,7 +22,7 @@ Further details available here: https://orb.net/docs/getting-started/what-is-orb
   <Category>Tools: Network:Management</Category>
   <WebUI/>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/TheMapledCog/unraid-templates/refs/heads/main/orb/favicon.png</Icon>
+  <Icon>https://raw.githubusercontent.com/TheMapledCog/unraid-templates/refs/heads/main/orb-sensor/favicon.png</Icon>
   <ExtraParams>--memory="512m"</ExtraParams>
   <PostArgs/>
   <CPUset/>
