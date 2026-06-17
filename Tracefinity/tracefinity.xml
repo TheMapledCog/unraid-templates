@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Tracefinity</Name>
+  <Repository>ghcr.io/tracefinity/tracefinity:latest</Repository>
+  <Registry>https://github.com/tracefinity/tracefinity</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/tracefinity/tracefinity/issues</Support>
+  <Project>https://github.com/tracefinity/tracefinity</Project>
+  <Overview>Generate custom gridfinity bins with AI from photos of your tools. Tracefinity allows you to photograph your tools on paper, trace their outlines automatically, and design 3D-printable Gridfinity bins that fit them perfectly. By default, it uses a local model for object detection (no internet/API key needed) or can be configured to use Gemini via an optional Google API Key. This template includes settings to leverage an NVIDIA GPU for blazing-fast local image processing.</Overview>
+  <Category>AI: Productivity: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:3000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/TheMapledCog/unraid-templates/refs/heads/main/tracefinity_icon.png</Icon>
+  <ExtraParams>--runtime=nvidia</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1781702004</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires>NVIDIA Driver Plugin installed on Unraid</Requires>
+  <Config Name="Web Port" Target="3000" Default="3000" Mode="tcp" Description="The port used to access the Tracefinity Web Interface." Type="Port" Display="always" Required="true" Mask="false">3000</Config>
+  <Config Name="Appdata Storage" Target="/app/storage" Default="/mnt/user/appdata/tracefinity" Mode="rw" Description="Persistent path where your saved tools, library, and app data will be stored." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/tracefinity</Config>
+  <Config Name="Nvidia Visible Devices" Target="NVIDIA_VISIBLE_DEVICES" Default="all" Mode="{3}" Description="Set to 'all' or provide a specific GPU UUID to let the container use your graphics card." Type="Variable" Display="always" Required="true" Mask="false">all</Config>
+  <Config Name="ONNX Runtime Provider" Target="TRACEFINITY_ONNX_PROVIDER" Default="auto" Mode="" Description="Forces the local ONNX models to leverage CUDA instead of pinning the CPU.&#13;&#10;Local ONNX provider: auto, cuda, or cpu" Type="Variable" Display="always" Required="true" Mask="false">cuda</Config>
+  <Config Name="Tracer Selection" Target="TRACERS" Default="auto-detected" Mode="" Description="Select local models. 'birefnet-general' is the heavy, high-quality model best suited for running via your GPU.&#13;&#10;By default, Tracefinity uses IS-Net for local tracing.  &#13;&#10;Options: gemini, birefnet-lite, isnet" Type="Variable" Display="always" Required="false" Mask="false">auto-detected</Config>
+  <Config Name="Google API Key" Target="GOOGLE_API_KEY" Default="" Mode="{3}" Description="(Optional) Set your Gemini Google API key here if you want to use cloud-based Gemini instead of your local GPU models." Type="Variable" Display="always" Required="false" Mask="true"/>
+  <Config Name="GEMINI_IMAGE_MODEL" Target="GEMINI_IMAGE_MODEL" Default="" Mode="" Description="(Optional) Gemini model for mask generation&#13;&#10;See https://github.com/tracefinity/tracefinity#gemini-api for current options." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Nvidia Driver Capabilities" Target="NVIDIA_DRIVER_CAPABILITIES" Default="all" Mode="{3}" Description="Controls what driver features are exposed to the container (e.g., compute, utility)." Type="Variable" Display="advanced" Required="true" Mask="false">all</Config>
+  <TailscaleStateDir/>
+</Container>
