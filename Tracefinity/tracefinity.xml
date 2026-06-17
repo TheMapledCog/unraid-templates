@@ -12,8 +12,8 @@
   <Overview>Generate custom gridfinity bins with AI from photos of your tools. Tracefinity allows you to photograph your tools on paper, trace their outlines automatically, and design 3D-printable Gridfinity bins that fit them perfectly. By default, it uses a local model for object detection (no internet/API key needed) or can be configured to use Gemini via an optional Google API Key. This template includes settings to leverage an NVIDIA GPU for blazing-fast local image processing.</Overview>
   <Category>AI: Productivity: Tools:</Category>
   <WebUI>http://[IP]:[PORT:3000]</WebUI>
-  <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/TheMapledCog/unraid-templates/refs/heads/main/tracefinity_icon.png</Icon>
+  <TemplateURL>https://raw.githubusercontent.com/Upmacc/unraid-templates/refs/heads/main/Tracefinity/tracefinity.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/TheMapledCog/unraid-templates/refs/heads/main/Tracefinity/tracefinity_icon.png</Icon>
   <ExtraParams>--runtime=nvidia</ExtraParams>
   <PostArgs/>
   <CPUset/>
