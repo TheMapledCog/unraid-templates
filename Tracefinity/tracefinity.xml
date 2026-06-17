@@ -13,7 +13,7 @@
   <Category>AI: Productivity: Tools:</Category>
   <WebUI>http://[IP]:[PORT:3000]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/Upmacc/unraid-templates/refs/heads/main/Tracefinity/tracefinity.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/TheMapledCog/unraid-templates/refs/heads/main/tracefinity_icon.png</Icon>
+  <Icon>https://raw.githubusercontent.com/TheMapledCog/unraid-templates/refs/heads/main/Tracefinity/tracefinity_icon.png</Icon>
   <ExtraParams>--runtime=nvidia</ExtraParams>
   <PostArgs/>
   <CPUset/>
