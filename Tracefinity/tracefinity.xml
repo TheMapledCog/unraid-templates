@@ -14,7 +14,7 @@
   <WebUI>http://[IP]:[PORT:3000]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/Upmacc/unraid-templates/refs/heads/main/Tracefinity/tracefinity.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/TheMapledCog/unraid-templates/refs/heads/main/Tracefinity/tracefinity_icon.png</Icon>
-  <ExtraParams>--runtime=nvidia</ExtraParams>
+  <ExtraParams>--runtime=nvidia --user 0:0</ExtraParams>
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1781702004</DateInstalled>
