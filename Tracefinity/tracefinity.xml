@@ -14,7 +14,7 @@
   <WebUI>http://[IP]:[PORT:3000]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/Upmacc/unraid-templates/refs/heads/main/Tracefinity/tracefinity.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/TheMapledCog/unraid-templates/refs/heads/main/Tracefinity/tracefinity_icon.png</Icon>
-  <ExtraParams>--runtime=nvidia --user 0:0</ExtraParams>
+  <ExtraParams>--runtime=nvidia</ExtraParams>
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1781702004</DateInstalled>
@@ -28,6 +28,8 @@
   <Config Name="Tracer Selection" Target="TRACERS" Default="auto-detected" Mode="" Description="Select local models. 'birefnet-general' is the heavy, high-quality model best suited for running via your GPU.&#13;&#10;By default, Tracefinity uses IS-Net for local tracing.  &#13;&#10;Options: gemini, birefnet-lite, isnet" Type="Variable" Display="always" Required="false" Mask="false">auto-detected</Config>
   <Config Name="Google API Key" Target="GOOGLE_API_KEY" Default="" Mode="{3}" Description="(Optional) Set your Gemini Google API key here if you want to use cloud-based Gemini instead of your local GPU models." Type="Variable" Display="always" Required="false" Mask="true"/>
   <Config Name="GEMINI_IMAGE_MODEL" Target="GEMINI_IMAGE_MODEL" Default="" Mode="" Description="(Optional) Gemini model for mask generation&#13;&#10;See https://github.com/tracefinity/tracefinity#gemini-api for current options." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="UID for permissions. Do not change unless you know what you're doing." Type="Variable" Display="always" Required="true" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="GID for permissions. Do not change unless you know what you're doing." Type="Variable" Display="always" Required="true" Mask="false">100</Config>
   <Config Name="Nvidia Driver Capabilities" Target="NVIDIA_DRIVER_CAPABILITIES" Default="all" Mode="{3}" Description="Controls what driver features are exposed to the container (e.g., compute, utility)." Type="Variable" Display="advanced" Required="true" Mask="false">all</Config>
   <TailscaleStateDir/>
 </Container>
